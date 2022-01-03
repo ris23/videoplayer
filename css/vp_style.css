@@ -1,0 +1,144 @@
+
+body, html
+{
+    margin: 20px auto;
+    background-color: #000000;
+    box-sizing: border-box;
+   
+}
+
+.smartphone
+{
+    width: 300px;
+    height: 600px;
+    margin: auto;
+    border: 10px white solid;
+    border-bottom-width: 10px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(146, 146, 146, 0.5); 
+}
+
+.smartphone:before
+{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.smartphone .content
+{
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 20px rgba(73, 73, 73, 0.5);; 
+}
+/* rgba(73, 73, 73, 0.5); */
+
+.smartphone .first_bg
+{
+    width: 95%;
+    height : 570px;
+    margin-top: 5%;
+    background-color: #1b2223;
+    border-radius: 20px;
+}
+
+#video
+{
+    margin-top: 5%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.button_style
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button_style:hover {
+    background-color: #f4fefd; 
+    border-radius: 50px;
+    color: black;
+}
+
+section
+{
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 95%;
+    height : 56%;
+    background: #8ecec7;
+    border: 1px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin : 0 auto;
+    cursor: pointer;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#videoList
+{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+h5
+{
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: black;
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: transparent important;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #000000;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+  
+  
+  

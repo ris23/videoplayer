@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/vp_style.css"/>
+        
+
+        <script>
+            var vol = 1; 
+    
+            function playVid()
+            {
+                document.getElementById('video').play();
+            }
+
+            function pauseVid()
+            {
+                document.getElementById('video').pause();
+            }
+
+            function updateVol(volData)
+            {
+                vol += volData;
+
+                document.getElementById('video').volume = vol;
+            }
+
+            function changeVideo(videoName)
+            {
+                video.src = videoName;
+                video.play();
+            }
+        </script>
+    </head>
+    
+    <body> 
+        <div class="smartphone">
+            <center>
+                <div class = "first_bg">
+                     <video id="video" src="list_video/Baby Shark.mp4"></video>
+                     <div>
+                        <button class = "button_style" onclick="updateVol(0.1)"><i class="fas fa-volume-up"></i></button>
+                        <button class = "button_style" onclick="playVid()"><i class="fas fa-play"></i></button>
+                        <button class = "button_style" onclick="pauseVid()"><i class="fas fa-pause"></i></button>
+                        <button class = "button_style" onclick="updateVol(-0.1)"><i class="fas fa-volume-down"></i></button>
+                     </div>
+
+                     <section>
+                        <div>
+                        <div class="row" onclick="changeVideo('list_video/Baby Shark.mp4')">
+                            <video id="videoList" src="list_video/Baby Shark.mp4"></video>
+                            <h5>Baby Shark</h5>
+                         </div>
+                         
+                         <div class="row" onclick="changeVideo('list_video/CuppyCake.mp4')">
+                            <video id="videoList" src="list_video/CuppyCake.mp4"></video>
+                            <h5>CuppyCake</h5>
+                         </div>
+
+                         <div class="row" onclick="changeVideo('list_video/How Far.mp4')">
+                            <video id="videoList" src="list_video/How Far.mp4"></video>
+                            <h5>How Far I'll Go</h5>
+                         </div>
+
+                         <div class="row" onclick="changeVideo('list_video/Johny Johny Yes Papa.mp4')">
+                            <video id="videoList" src="list_video/Johny Johny Yes Papa.mp4"></video>
+                            <h5>Johny Johny Yes Papa</h5>
+                         </div>
+                        </div>
+                     </section>
+                </div>
+            </center>
+        </div>
+    </body>
+</html>
